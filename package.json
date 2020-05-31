@@ -1,0 +1,25 @@
+{
+  "name": "chrome-extension-starter",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.3",
+    "typesync": "^0.7.0",
+    "webextension-polyfill-ts": "^0.16.0",
+    "webextension-toolbox": "^3.0.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webextension-polyfill": "^0.6.0"
+  },
+  "scripts": {
+    "preinstall": "typesync || :",
+    "start": "webextension-toolbox dev chrome",
+    "package": "webextension-toolbox build chrome"
+  }
+}
