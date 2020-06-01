@@ -15,7 +15,7 @@ module.exports = {
         ]
     );
     config.module.rules.push({
-        test: /\.tsx$/,
+        test: /\.(ts|tsx)$/,
         use: 'ts-loader',
     });
     config.resolve.extensions.push('.js', '.ts', '.tsx');
